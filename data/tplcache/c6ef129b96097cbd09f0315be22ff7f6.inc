@@ -1,0 +1,1 @@
+<div class="item"><figure class="pic"><a href="[field:imgsrc/]" title=""><img src="[field:imgsrc/]" alt=""/></a></figure></div>

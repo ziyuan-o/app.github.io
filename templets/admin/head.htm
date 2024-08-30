@@ -1,0 +1,77 @@
+<header class="header">
+  <div class="inner">
+    <h1 class="logo"> <a title="{dede:global.cfg_webname/}" href="/" style="background-image:url(/static/images/logo.png);">{dede:global.cfg_webname/})</a> </h1>
+    <div class="mobile"> <a href="javascript:void(0);" title="手机访问">手机访问</a>
+      <div id="wap" class="qr" title="{dede:global.cfg_webname/}"><canvas width="256" height="256" style="display: none;"></canvas><img src="/static/images/ewm.png"></div>
+    </div>
+    <nav class="nav">
+      <ul>
+
+		<li><a class='{dede:field name=typeid runphp="yes"}(@me=="")? @me="cur":@me="";{/dede:field}' href="/">网站首页</a></li>
+			
+          {dede:channelartlist row='10' typeid='top' currentstyle='cur'}
+		  
+		  <li class='{dede:field name=typeid runphp="yes"}
+            global $dsql;
+            $sql = "SELECT id From `dede_arctype` WHERE reid='@me' And ishidden<>1 order by sortrank asc limit 0, 100 ";
+            $row = $dsql->GetOne($sql);      
+            @me=is_array($row)?'dropdown':'';
+            {/dede:field} {dede:field.currentstyle/}'>
+			
+			<a class="{dede:field.currentstyle/}" href="{dede:field name='typeurl'/}" {dede:field name=typeid runphp="yes"}
+            global $dsql;
+            $sql = "SELECT id From `dede_arctype` WHERE reid='@me' And ishidden<>1 order by sortrank asc limit 0, 100 ";
+            $row = $dsql->GetOne($sql);      
+            @me=is_array($row)?'class="dropdown-toggle"':'';
+            {/dede:field}>{dede:field name='typename'/}</a>
+			
+			{dede:field name=typeid runphp="yes"}
+            global $dsql;
+            $sql = "SELECT id From `dede_arctype` WHERE reid='@me' And ishidden<>1 order by sortrank asc limit 0, 100 ";
+            $row = $dsql->GetOne($sql);      
+            @me=is_array($row)?' 
+            <ul>':'';
+            {/dede:field}
+              {dede:channel type='son' noself='yes'}
+              <li><a href='[field:typelink/]'>[field:typename/]</a></li>
+              {/dede:channel}{dede:field name=typeid runphp="yes"}
+            global $dsql;
+            $sql = "SELECT id From `dede_arctype` WHERE reid='@me' And ishidden<>1 order by sortrank asc limit 0, 100 ";
+            $row = $dsql->GetOne($sql);      
+            @me=is_array($row)?'              
+            </ul>':'';
+            {/dede:field}
+             </li>{/dede:channelartlist}
+		
+		
+		
+		
+		
+		
+		
+	  </ul>
+    </nav>
+    <!--手机端搜索和栏目按钮-->
+    <div class="wapbtn">
+      <!--<div class="searchbtn"></div>-->
+      <div class="navbtn"> <span></span> </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--手机端搜索-->
+  <!--<div class="search">-->
+  <!--  <div class="searchform">-->
+	 <!-- <form  id="searchForm" action="/plus/search.php" name="searchForm">-->
+  <!--      <input type="hidden" name="kwtype" value="0" />-->
+		<!--<select name="channeltype" id="channeltype">-->
+  <!--          <option value="1" selected="1">新闻</option>-->
+  <!--          <option value="2">APP</option>-->
+  <!--      </select>-->
+  <!--      <div class="input">-->
+  <!--        <input type="text" name="q" id="edtSearch" class="text" value="" placeholder="" x-webkit-speech=""/>-->
+  <!--      </div>-->
+  <!--      <input type="submit" id="btnPost" name="submit" class="submit" value="查找"/>-->
+  <!--    </form>-->
+  <!--  </div>-->
+  <!--</div>-->
+</header>
