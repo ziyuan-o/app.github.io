@@ -2,15 +2,15 @@
   "name": "blog",
   "version": "2.3.1",
   "author": {
-    "url": "https://github.com/xiaojunnanya",
-    "email": "hi@jl.cn",
-    "name": "jl"
+    "url": "https://www.hy-ip.com",
+    "email": "3975759714@qq.cn",
+    "name": "hyip"
   },
   "repository": {
-    "url": "https://github.com/xiaojunnanya/blog",
+    "url": "https://www.hy-ip.com",
     "type": "git"
   },
-  "homepage": "http://xiaojunnan.cn",
+  "homepage": "https://www.hy-ip.com",
   "license": "MIT",
   "scripts": {
     "docusaurus": "docusaurus",

@@ -77,12 +77,12 @@ function Hero() {
         <animated.div style={trails[0]} className={styles.hero_text}>
           <Translate id="homepage.hero.greet">你好! 我是</Translate>
           <span className={styles.intro__name}>
-            <Translate id="homepage.hero.name">鲸落</Translate>
+            <Translate id="homepage.hero.name">HYIP博客</Translate>
           </span>
         </animated.div>
         <animated.p style={trails[1]}>
           <Translate id="homepage.hero.text">
-            {`在这里我会分享各类技术栈所遇到问题与解决方案，同时还有我的学习笔记，并希望我的开发经历对你有所启发。`}
+            {`HYIP高收益投资！高收益高风险，投资需谨慎。`}
           </Translate>
           <br />
           <br />
@@ -90,28 +90,28 @@ function Hero() {
             id="homepage.hero.look"
             values={{
               note: (
-                <Link to="/docs/skill">
-                  <Translate id="hompage.hero.note">技术笔记</Translate>
+                <Link to="/docs/Newcomers">
+                  <Translate id="hompage.hero.note">新人必看</Translate>
                 </Link>
               ),
               project: (
-                <Link to="/project">
-                  <Translate id="hompage.hero.project">实战项目</Translate>
+                <Link to="/docs/HighQuality">
+                  <Translate id="hompage.hero.project">优质项目</Translate>
                 </Link>
               ),
               link: (
-                <Link to="/resource">
-                  <Translate id="hompage.hero.link">资源导航</Translate>
+                <Link to="/docs/wallet">
+                  <Translate id="hompage.hero.link">电子钱包</Translate>
                 </Link>
               ),
               idea: (
-                <Link to="/tags/随笔">
-                  <Translate id="hompage.hero.idea">想法感悟</Translate>
+                <Link to="docs/VPN">
+                  <Translate id="hompage.hero.idea">VPN软件</Translate>
                 </Link>
               ),
             }}
           >
-            {`你可以随处逛逛，查看{note}、{project}、{link}。`}
+            {`你可以随处逛逛，查看{note}、{project}、{link}、{idea}。`}
           </Translate>
         </animated.p>
         <SocialLinks style={trails[2]} />
@@ -151,34 +151,16 @@ export function SocialLinks({ ...prop }) {
   const themeConfig = useThemeConfig() as ThemeConfig
 
   const socials = themeConfig.socials as {
-    github: string
     twitter: string
-    juejin: string
-    csdn: string
     qq: string
     wx: string
-    cloudmusic: string
-    zhihu: string
     emial: string
   }
 
   return (
     <animated.div className={styles.social__links} {...prop}>
-      <a href={socials.github} target="_blank">
-        <Icon icon="ri:github-line" />
-      </a>
-      <a href={socials.juejin} target="_blank">
-        <JuejinIcon />
-      </a>
-      <a href={socials.qq} target="_blank">
-        <Icon icon="ri:qq-line" />
-      </a>
-      <a href={socials.twitter} target="_blank">
-        <Icon icon="ri:twitter-line" />
-      </a>
-      <a href={socials.zhihu} target="_blank">
-        <Icon icon="ri:zhihu-line" />
-      </a>
+     
+      
     </animated.div>
   )
 }

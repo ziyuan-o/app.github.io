@@ -32,11 +32,11 @@ keywords: [HYIP, 优质, 项目]
 6. 预期盈利能力 - 每月 30% 起
 
 
-
 ### [®️立即注册](https://aitimart.com/new-account/?code=1344696906597400)
 
-:::note
 
+:::note
+### 博主投入:`TRX`1️⃣0️⃣0️⃣0️⃣
 [注册教程](aittimart注册.md)
 [绑定谷歌验证器](aitimart绑定验证器.md)
 [存款教程](aitimart存款.md)
@@ -44,6 +44,11 @@ keywords: [HYIP, 优质, 项目]
 
 :::
 
+:::tip
+## HM指数：6️⃣.6️⃣4️⃣
+HM指数是什么❓🤔    
+### [点击我了解👈](/docs/Newcomers/hyip-hm)
+:::
 
 
 -----------------------------
@@ -60,7 +65,7 @@ keywords: [HYIP, 优质, 项目]
 
 :::tip
 
-[收入计算规则和特点](./aitimart/aitimart-calculate)
+[收入计算规则和特点](aitimart-calculate)
 
 :::
 
@@ -79,7 +84,7 @@ keywords: [HYIP, 优质, 项目]
 
 :::tip
 
-[有关贷款计划的更多信息](./aitimart/aitimart-loan)
+[有关贷款计划的更多信息](aitimart-loan)
 
 :::
 
